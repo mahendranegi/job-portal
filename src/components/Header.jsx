@@ -36,7 +36,7 @@ function Header({ onThemeChange, darkTheme, onFilter }) {
         <header>
           <div>
             <h1>JobPortal</h1>
-            {display && <input onClick={handleOpen} placeholder="Search Here.." />}
+            {display && <input type="text" onClick={handleOpen} placeholder="Enter Here.." />}
           </div>
           <Toggle onClick={toggleClick} isDark={darkTheme} />
         </header>

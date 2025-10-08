@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,h6{
 .container {
 //   @include flex-center;
   flex-direction: column;
+          box-sizing: border-box;
 
 }
 .switch {
@@ -120,7 +121,6 @@ input:checked + .slider:before {
 }
   h1 {
     color: $primary-color;
-    margin-bottom: 1rem;
   }
 .skills{
     display: flex;
@@ -160,6 +160,7 @@ input:checked + .slider:before {
     font-weight: bold;
 }
     width: 1280px;
+    box-sizing: border-box;
     margin: 0 auto;
     & section{
         display: flex;
@@ -176,11 +177,48 @@ input:checked + .slider:before {
 
 
   @media only screen and (max-width: 1100px) {
+    h1{
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    header input{
+      width: auto;
+    }
   .container {
     width: 100%;
     padding: 0 16px;
+            box-sizing: border-box;
     & section {
     gap: 8px;
+    flex-wrap: wrap;
     }
+}
+.container article{
+        padding: 12px;
+        box-sizing: border-box;
+        flex-direction: column;
+}
+.skills{
+  flex-direction: column;
+}
+header > div{
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+}
+.container section select{
+      width: 48%;
+}
+.container button{
+  width: 100%;
+    margin: 12px 0 0;
+}
+header{
+  padding: 16px 0 16px;
+  & > div:last-child{
+    display: flex;
+    justify-content: end;
+  }
 }
 }

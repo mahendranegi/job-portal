@@ -41,7 +41,7 @@ function App() {
             <Cards key={job.id} {...job} />
           ))
         ) : (
-          <p style={{display:'flex',alignItems:'center',justifyContent:'center',height:'calc(100dvh - 195px)',fontSize: '32px'}}>
+          <p style={{display:'flex',alignItems:'center',justifyContent:'center',height:'calc(100dvh - 195px)',fontSize: '32px',padding: '0 24px',textAlign: 'center'}}>
             No jobs found matching your criteria.
           </p>
         )}
